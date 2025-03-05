@@ -29,6 +29,32 @@ nav
 
 }
 
+header nav {
+    background-color: green;
+    display: flex;
+}
+ul
+{
+    color: #8b8b8b;
+    list-style: none;
+    display: flex;
+}
+li
+{
+    padding: 0 1em;
+}
+.logo{
+    align-items: start;
+    align-content: start;
+    display: flex;
+    align-items: left;
+}
+.logo img{
+    max-width: 25%;
+    height: auto;
+    align-self: start;
+}
+
 aside
 {
     order: 3;
