@@ -1,4 +1,4 @@
-/* Landing */
+/* Main */
 .contenedor-principal
 {
     color: black;
@@ -21,44 +21,11 @@ main
 
 }
 
-nav
-{
-    order: 1;
-    flex-grow: 1;
-    background-color: #bbb;
-
-}
-
-header nav {
-    background-color: green;
-    display: flex;
-}
-ul
-{
-    color: #8b8b8b;
-    list-style: none;
-    display: flex;
-}
-li
-{
-    padding: 0 1em;
-}
-.logo{
-    align-items: start;
-    align-content: start;
-    display: flex;
-    align-items: left;
-}
-.logo img{
-    max-width: 25%;
-    height: auto;
-    align-self: start;
-}
-
 aside
 {
     order: 3;
     flex-grow: 1;
+    flex-basis: 0;
     background-color: #ccc;
 
 }
@@ -66,8 +33,67 @@ aside
 article
 {
     order: 2;
-    flex-grow: 2;
+    flex-grow: 3;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
 
+}
+
+nav
+{
+    order: 1;
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: #bbb;
+
+}
+
+header nav
+{
+    background-color: blue;
+    display: flex;
+}
+
+ul
+{
+    color: #8b8b8b;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+li
+{
+    padding: 0 1em;
+    text-decoration-thickness: 700;
+    background-color: #bbb;
+    margin: auto 100px auto 100px;
+}
+
+header nav a
+{
+    color: #1bb9c2;
+
+}
+
+a:hover
+{
+    color: purple;
+}
+
+.logo
+{
+    align-items: start;
+    display: flex;
+    max-width: 140px;
+}
+
+.logo img
+{
+    max-width: 100%;
+    height: auto;
+    align-self: start;
 }
 
 footer
@@ -78,17 +104,16 @@ footer
 
 /* Galeria */
 
+
 .galeria
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1000px;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
     box-shadow: 2px 2px 10px black;
     background-color: azure;
+    justify-content: center;
+    height: auto;
+    border-radius: 10px;
 }
 
 #box-1
