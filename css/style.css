@@ -83,22 +83,22 @@ header nav a
 {
     color: #265355;
     text-decoration: none;
-    padding: 100px;
+    padding: 30px;
 
 }
 
-a:hover
+header a:hover
 {
     color: purple;
     background-color: #b8c7cc;
-    padding-top: 30px;
+    padding: 30px;
 }
 
 a:hover.logo
 {
 
     background-color: transparent;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .logo
@@ -121,7 +121,46 @@ footer
 {
     background-color: #b59e67;
     text-align: center;
+    display: flex;
 }
+
+footer a
+{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    color: #ccc;
+}
+a.instagram
+{
+    background-image: url("../imagenes/icon-instagram-0.svg");
+}
+
+a:hover.instagram
+{
+    background-image: url("../imagenes/icon-instagram.svg");
+}
+a.youtube
+{
+    background-image: url("../imagenes/icon-youtube-0.svg");
+}
+a:hover.youtube
+{
+    background-image: url("../imagenes/icon-youtube.svg");
+}
+
+a.facebook
+{
+    background-image: url("../imagenes/icon-fb-0.svg");
+}
+
+a:hover.facebook
+{
+    background-image: url("../imagenes/icon-fb.svg");
+}
+
+
 
 /* Galeria */
 
