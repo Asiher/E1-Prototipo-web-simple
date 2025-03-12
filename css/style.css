@@ -9,9 +9,10 @@
 
 header
 {
-    background-color: #ddd;
+    background-color: #d6c292;
     text-align: center;
-
+    font-family: 'Lucida Sans', sans-serif;
+    font-style: italic;
 }
 
 main
@@ -37,7 +38,7 @@ article
     flex-basis: 0;
     display: flex;
     flex-direction: column;
-
+    background-color: #d0c3a6;
 }
 
 nav
@@ -45,14 +46,14 @@ nav
     order: 1;
     flex-grow: 1;
     flex-basis: 0;
-    background-color: #bbb;
-
+    background-color: #92876c;
 }
 
 header nav
 {
-    background-color: blue;
+    background-color: #fff1cf;
     display: flex;
+    font-style: normal;
 }
 
 ul
@@ -60,33 +61,52 @@ ul
     color: #8b8b8b;
     list-style: none;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 li
 {
     padding: 0 1em;
     text-decoration-thickness: 700;
-    background-color: #bbb;
-    margin: auto 100px auto 100px;
+    background-color: #b59e67;
+    align-content: flex-end;
+    flex-grow: 1;
+    margin-top: 20px;
 }
 
 header nav a
 {
-    color: #1bb9c2;
+    color: #265355;
+    text-decoration: none;
+    padding: 100px;
 
 }
 
 a:hover
 {
     color: purple;
+    background-color: #b8c7cc;
+    padding-top: 30px;
+}
+
+a:hover.logo
+{
+
+    background-color: transparent;
+    padding-top: 10px;
 }
 
 .logo
 {
     align-items: start;
-    display: flex;
     max-width: 140px;
+    background-color: transparent;
+    margin: 2px;
 }
 
 .logo img
@@ -96,9 +116,10 @@ a:hover
     align-self: start;
 }
 
+/* Footer */
 footer
 {
-    background-color: #ddd;
+    background-color: #b59e67;
     text-align: center;
 }
 
