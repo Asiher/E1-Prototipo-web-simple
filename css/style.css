@@ -1,10 +1,8 @@
-/* Main */
-.contenedor-principal
+/* Inicio Ajustes Generales */
+banner
 {
-    color: black;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+    background-image: linear-gradient(90deg, #fcb045 0%, #fd1d1d 35%, #833ab4 100%);
+    border: 10px solid red;
 }
 
 header
@@ -13,6 +11,13 @@ header
     text-align: center;
     font-family: 'Lucida Sans', sans-serif;
     font-style: italic;
+    position: sticky;
+    top: 0;
+}
+
+banner
+{
+    display: flexbox;
 }
 
 main
@@ -37,8 +42,8 @@ article
     flex-grow: 3;
     flex-basis: 0;
     display: flex;
-    flex-direction: column;
     background-color: #d0c3a6;
+    flex-direction: column;
 }
 
 nav
@@ -47,8 +52,9 @@ nav
     flex-grow: 1;
     flex-basis: 0;
     background-color: #92876c;
-    
+
 }
+
 ul
 {
     color: #8b8b8b;
@@ -71,18 +77,49 @@ li
     flex-grow: 1;
     margin-top: 20px;
 }
-/* Header */
+
+/* Fin de Ajustes Generales */
+
+/* Inicio Main */
+.contenedor-principal
+{
+    color: black;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+/* Fin Main */
+
+/* Banner */
+banner img
+{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+banner h1
+{
+    color: #833ab4;
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Fin del Banner */
+
+/* Inicio del Header */
 header nav
 {
     background-color: #fff1cf;
     display: flex;
     font-style: normal;
-    
-    overflow: hidden;
-	background-image: linear-gradient(90deg, #fcb045 0%, #fd1d1d 35%, #833ab4 100%);
-	border: 10px solid red;
-	position: sticky;
-	top: 0;
+    background-image: linear-gradient(90deg, #fcb045 0%, #fd1d1d 35%, #833ab4 100%);
+    border: 10px solid red;
 }
 
 header nav a
@@ -90,14 +127,13 @@ header nav a
     color: #265355;
     text-decoration: none;
     padding: 30px;
-
 }
 
 header a:hover
 {
     color: purple;
     background-color: #b8c7cc;
-    padding: 30px;
+    padding: 30px 30px 0px 30px;
 }
 
 a:hover.logo
@@ -113,6 +149,8 @@ a:hover.logo
     max-width: 140px;
     background-color: transparent;
     margin: 2px;
+    padding: 30px 30px 0px 30px;
+
 }
 
 .logo img
@@ -122,7 +160,9 @@ a:hover.logo
     align-self: start;
 }
 
-/* Footer */
+/* Fin del Header */
+
+/* Inicio del Footer */
 footer
 {
     background-color: #b59e67;
@@ -140,6 +180,7 @@ footer a
     background-size: cover;
     color: #ccc;
 }
+
 a.instagram
 {
     background-image: url("../imagenes/icon-instagram-0.svg");
@@ -149,10 +190,12 @@ a:hover.instagram
 {
     background-image: url("../imagenes/icon-instagram.svg");
 }
+
 a.youtube
 {
     background-image: url("../imagenes/icon-youtube-0.svg");
 }
+
 a:hover.youtube
 {
     background-image: url("../imagenes/icon-youtube.svg");
@@ -173,12 +216,14 @@ footer p
     font-size: 20px;
     color: #554b33;
 }
+
 footer a.logo
 {
     width: 140px;
     margin: 20px;
 }
 
+/* Fin del Footer */
 
 
 /* Galeria */
