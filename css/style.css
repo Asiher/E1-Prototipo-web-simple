@@ -47,15 +47,8 @@ nav
     flex-grow: 1;
     flex-basis: 0;
     background-color: #92876c;
+    
 }
-
-header nav
-{
-    background-color: #fff1cf;
-    display: flex;
-    font-style: normal;
-}
-
 ul
 {
     color: #8b8b8b;
@@ -77,6 +70,19 @@ li
     align-content: flex-end;
     flex-grow: 1;
     margin-top: 20px;
+}
+/* Header */
+header nav
+{
+    background-color: #fff1cf;
+    display: flex;
+    font-style: normal;
+    
+    overflow: hidden;
+	background-image: linear-gradient(90deg, #fcb045 0%, #fd1d1d 35%, #833ab4 100%);
+	border: 10px solid red;
+	position: sticky;
+	top: 0;
 }
 
 header nav a
@@ -122,13 +128,15 @@ footer
     background-color: #b59e67;
     text-align: center;
     display: flex;
+    flex-direction: column;
+    align-content: stretch;
 }
 
 footer a
 {
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     background-size: cover;
     color: #ccc;
 }
@@ -160,10 +168,20 @@ a:hover.facebook
     background-image: url("../imagenes/icon-fb.svg");
 }
 
+footer p
+{
+    font-size: 20px;
+    color: #554b33;
+}
+footer a.logo
+{
+    width: 140px;
+    margin: 20px;
+}
+
 
 
 /* Galeria */
-
 
 .galeria
 {
