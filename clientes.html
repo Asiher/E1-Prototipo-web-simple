@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delta landign</title>
+    <title>Clientes</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/ico" href="imagenes/favicon.ico">
 </head>
@@ -30,99 +30,42 @@
         <!-- Cuerpo principal de la pagina -->
         <main>
             <article>
-                <section id="Grupo Delta">
-                    <h1> Grupo Delta</h1>
-                    <h2>Quienes somos</h2>
-                    <p>
-                        Delta Electronics Inc fue fundada en 1971, con sede en Taipei, Taiwán. Ser un proveedor global
-                        de
-                        soluciones de gestión térmica y energética. Nuestra misión es: "Brindar soluciones innovadoras,
-                        limpias y energéticamente eficientes para un mañana mejor". Centrarse en abordar problemas
-                        ambientales clave, como el cambio climático global. La cultura corporativa de Delta se basa en
-                        los
-                        siguientes valores: Innovación, satisfacción del cliente, calidad, trabajo en equipo y agilidad.
-                    </p>
-                    <img src="" alt="">
-                </section>
-                <section id="Areas">
-                    <h1>Áreas de actuación
-                    </h1>
-                    <h2>Delta ofrece soluciones y productos en las siguientes áreas</h2>
-                    <ul>
-                        <li>
-                            <h1>Electrónica de potencia</h1>
-                            Componentes
-                            Poder y sistema
-                            Ventilador y gestor térmico
-                            Electrónica
-                        </li>
-                        <li>
-                            <h1>
-                                Automatización
-                            </h1>
-                            Automatización industrial
-                            Automatización de edificios
-                        </li>
-                        <li>
-                            <h1>
-                                Infraestructura
-                            </h1>
-                            Infraestructura de TIC
-                            Infraestructura energética y soluciones industriales
-                        </li>
-                    </ul>
-                </section>
-                <section id="Mision">
-                    <h1>
-                        Corporate Mission
-                    </h1>
-                    <h2>
-                        To provide innovative, clean, and energy-efficient solutions for a better tomorrow.
-                    </h2>
-                    <p>
-                        Delta, founded in 1971, is a global provider of power and thermal management solutions. Its
-                        mission
-                        statement, "To
-                        provide innovative, clean and energy-efficient solutions for a better tomorrow," focuses on
-                        addressing key environmental
-                        issues such as global climate change. As an energy-saving solutions provider with core
-                        competencies
-                        in power electronics
-                        and automation, Delta's business categories include Power Electronics, Mobility, Automation, and
-                        Infrastructure.
+                <!-- si el action esta vacio la url no cambia, hay que poner la direccion a la que va el contanido -->
+                <form action="" method="post">
+                    <label for="campo-nombre">Nombre:</label>
+                    <input id="campo-nombre" type="text" name="nombre" placeholder="Escribe tu nombre"><br>
+                    <label for="campo-contraseña">Contraseña: </label>
+                    <input id="campo-contraseña" type="password" name="Contraseña" required><br><br>
 
-                        Delta offers some of the most energy efficient power products in the industry, including
-                        switching
-                        power supplies with
-                        efficiency over 90%, telecom power with up to 98%, and PV inverters with up to 99.2% efficiency.
-                        We
-                        have also developed
-                        the world‘s first server power supply certified as 80 Plus Titanium.
+                    <!-- Checkbox, el name es obligaotrio siempre es como la decalracion de la variable, el value es el valor de la variable -->
+                    <input type="checkbox" name="moto" value="1">Tengo moto <br>
+                    <input type="checkbox" name="coche" value="1">Tengo coche <br><br>
 
-                        Headquartered in Taiwan, we regularly invest over 8% of our annual sales revenues in R&D and
-                        have
-                        worldwide R&D
-                        facilities in China, Europe, Japan, Singapore, Thailand, and the U.S.
+                    <!-- El name es el mismo para que solo pueda elegir uno -->
+                    <input type="radio" name="genero" value="hombre" checked>Hombre <br>
+                    <input type="radio" name="genero" value="mujer">Mujer <br>
+                    <input type="radio" name="genero" value="otro">Otro <br>
 
-                        Delta is a frequent recipient of international awards and related recognition for innovation,
-                        design, and continuous
-                        dedication to ESG. Since 2011, Delta has been listed on the Dow Jones Best-in-Class World Index
-                        for
-                        14 consecutive
-                        years. Delta has also won CDP with double A List for 4 times for its substantial contribution to
-                        climate change and
-                        water security issues and named Supplier Engagement Leader for its continuous development of a
-                        sustainable value chain
-                        for 7 consecutive years.
+                    <!-- Es un conjunto que se puede selecionar -->
+                    <label for="campo-select">¿Que comida te gusta mas?</label><br>
+                    <select name="comida" id="campo-select" multiple>
+                        <optgroup label="Frutas">
+                            <option value="manzana" selected>Manzana</option>
+                            <option value="pera">Pera</option>
+                        </optgroup>
+                        <optgroup label="Verduras">
+                            <option value="brocoli">Brocoli</option>
+                            <option value="coliflor">Coliflor</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <!-- Area de texto -->
+                    <textarea name="textarea" rows="4" cols="10"></textarea>
+                    <br>
+                    <!-- Boton de envio -->
+                    <input type="submit" value="Enviar">
 
-                        In response to the challenge of climate change, Delta will remain committed to the research and
-                        development of
-                        innovative, energy-saving products, solutions and services that contributing substantially to
-                        the
-                        sustainable
-                        development of mankind.
-                    </p>
-                </section>
+                </form>
             </article>
             <!-- Barra de navegacion derecha -->
             <nav>Navegacion</nav>
