@@ -29,52 +29,116 @@
         </header>
         <!-- Cuerpo principal de la pagina -->
         <main>
-            <article>
-                <!-- si el action esta vacio la url no cambia, hay que poner la direccion a la que va el contanido -->
+            <article class="formulario">
                 <form action="" method="post">
-                    <label for="campo-nombre">Nombre:</label>
-                    <input id="campo-nombre" type="text" name="nombre" placeholder="Escribe tu nombre"><br>
-                    <label for="campo-contraseña">Contraseña: </label>
-                    <input id="campo-contraseña" type="password" name="Contraseña" required><br><br>
+                    <fieldset id="Datos">
+                        <legend> Datos del Usuario </legend>
+                        <div>
+                            <label for="campo-nombre">Nombre</label>
+                            <input id="campo-nombre" type="text" name="nombre" placeholder="Escribe tu nombre"required><br>
 
-                    <!-- Checkbox, el name es obligaotrio siempre es como la decalracion de la variable, el value es el valor de la variable -->
-                    <input type="checkbox" name="moto" value="1">Tengo moto <br>
-                    <input type="checkbox" name="coche" value="1">Tengo coche <br><br>
 
-                    <!-- El name es el mismo para que solo pueda elegir uno -->
-                    <input type="radio" name="genero" value="hombre" checked>Hombre <br>
-                    <input type="radio" name="genero" value="mujer">Mujer <br>
-                    <input type="radio" name="genero" value="otro">Otro <br>
+                            <label for="campo-apellidos">Apellidos</label>
+                            <input id="campo-apellidos" type="text" name="apellidos"
+                                placeholder="Escribe tus apellidos"required><br>
+                        </div>
+                        <div>
+                            <p>Eres socio?</p>
+                            <input id="sociosi" type="radio" name="socio" value="si" checked>
+                            <label for="sociosi">Si, soy socio</label>
+                            <input id="sociono" type="radio" name="socio" value="no">
+                            <label for="sociono">No soy socio</label>
+                            <br><br>
+                        </div>
+                        <div>
+                            <label for="campo-email">Email</label>
+                            <input id="campo-email" type="email" name="email" placeholder="@gmail.com"><br>
 
-                    <!-- Es un conjunto que se puede selecionar -->
-                    <label for="campo-select">¿Que comida te gusta mas?</label><br>
-                    <select name="comida" id="campo-select" multiple>
-                        <optgroup label="Frutas">
-                            <option value="manzana" selected>Manzana</option>
-                            <option value="pera">Pera</option>
-                        </optgroup>
-                        <optgroup label="Verduras">
-                            <option value="brocoli">Brocoli</option>
-                            <option value="coliflor">Coliflor</option>
-                        </optgroup>
-                    </select>
-                    <br>
-                    <!-- Area de texto -->
-                    <textarea name="textarea" rows="4" cols="10"></textarea>
-                    <br>
-                    <!-- Boton de envio -->
-                    <input type="submit" value="Enviar">
+                            <label for="campo-contraseña">Contraseña </label>
+                            <input id="campo-contraseña" type="password" name="Contraseña" required><br><br>
+
+                            <label for="campo-empresa">Empresa</label>
+                            <input id="campo-empresa" type="text" name="empresa" required><br>
+
+                            <label for="campo-telefono">Telefono </label>
+                            <input id="campo-telefono" type="tel" name="Telefono" placeholder="+34 999 888 777"
+                                required><br><br>
+                        </div>
+
+                    </fieldset>
+                    <fieldset id="Motivo">
+                        <legend> Motivo de Contacto </legend>
+                        <div>
+                            <!-- Checkbox -->
+                            <ul>
+                                <li>
+                                    <input id="dudas" type="checkbox" name="dudas" value="1">
+                                    <label for="dudas">Resolver Dudas</label>
+                                </li>
+                                <li>
+                                    <input id="tecnica" type="checkbox" name="tecnica" value="1">
+                                    <label for="tecnica">Asistencia Tecnica</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <!-- Es un conjunto que se puede selecionar -->
+                            <label for="campo-select">Tipo de incidencia</label>
+                            <select name="incidencia" id="campo-select" required>
+                                <optgroup label="Componentes">
+                                    <option value="Electricos" selected>Electricos</option>
+                                    <option value="Programables">Programables</option>
+                                </optgroup>
+                                <optgroup label="Instalaciones Industriales">
+                                    <option value="Presupuesto">Presupuesto</option>
+                                    <option value="Contrataciones">Contrataciones</option>
+                                    <option value="Dudas">Dudas</option>
+                                </optgroup>
+                                <optgroup label="Energia y sistemas">
+                                    <option value="Fallo">Fallo</option>
+                                    <option value="Dudas">Dudas</option>
+                                </optgroup>
+                                <option value="Otros">Otros</option>
+
+                            </select>
+                            <br>
+                        </div>
+                    </fieldset>
+                    <fieldset id="Extra">
+                        <legend> Datos Extra </legend>
+                        <div>
+                            <!-- Campo de fecha -->
+                            <label for="datetime-local">Fecha de incidencia</label>
+                            <input type="datetime-local" name="Fecha">
+                            <br><br>
+                            <!-- Area de texto -->
+                            <textarea name="textarea" rows="5" cols="50">Informacion extra del caso</textarea>
+                            <br>
+                        </div>
+                    </fieldset>
+                    <fieldset id="Envio">
+                        <!-- Campo de checkbox -->
+                        <input id="checkbox" type="checkbox" name="condiciones" value="1" required>
+                        <label for="checkbox">Acepto las condiciones</label> <br>
+                        <br>
+                        <!-- Boton de envio -->
+                        <input type="submit" value="Enviar">
+
+                    </fieldset>
 
                 </form>
+
             </article>
             <!-- Barra de navegacion derecha -->
             <nav>Navegacion</nav>
             <!-- Barra de navegacion izquierda -->
-            <aside>Columna
+            <aside>
+                <h1>Columna</h1>
                 <ul>
-                    <li><a href="#Grupo delta">GRUPO DELTA</a></li>
-                    <li><a href="#Areas">AREAS DE ACTUACION</a></li>
-                    <li><a href="#Mision">MISION</a></li>
+                    <li><a href="#Datos">DATOS USUARIO</a></li>
+                    <li><a href="#Motivo">MOTIVOS</a></li>
+                    <li><a href="#Extra">DATOS EXTRA</a></li>
+                    <li><a href="#Envio">ENVIO</a></li>
                 </ul>
             </aside>
         </main>

@@ -1,8 +1,7 @@
 /* Inicio Ajustes Generales */
 banner
 {
-    background-image: linear-gradient(90deg, #fcb045 0%, #fd1d1d 35%, #833ab4 100%);
-    border: 10px solid red;
+    border: 10px solid #678c99;
 }
 
 header
@@ -32,7 +31,7 @@ aside
     order: 3;
     flex-grow: 1;
     flex-basis: 0;
-    background-color: #ccc;
+    background-color: #92876c;
 
 }
 
@@ -78,6 +77,13 @@ li
     margin-top: 20px;
 }
 
+p
+{
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: justify;
+    padding: 5px;
+}
+
 /* Fin de Ajustes Generales */
 
 /* Inicio Main */
@@ -103,12 +109,15 @@ banner img
 
 banner h1
 {
-    color: #833ab4;
+    color: #b59e67;
+    background-color: #554b33;
+    opacity: 2;
     position: absolute;
     top: 30vh;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 /* Fin del Banner */
 
@@ -118,8 +127,9 @@ header nav
     background-color: #fff1cf;
     display: flex;
     font-style: normal;
-    background-image: linear-gradient(90deg, #fcb045 0%, #fd1d1d 35%, #833ab4 100%);
-    border: 10px solid red;
+    /* background-image: linear-gradient(90deg, #fcb045 0%, #fd1d1d 35%, #833ab4 100%); */
+    background-image: linear-gradient(90deg, #fff1cf 0%, #d6c292 35%, #b59e67 100%);
+    border: 10px solid #746950;
 }
 
 header nav a
@@ -225,8 +235,28 @@ footer a.logo
 
 /* Fin del Footer */
 
+/* Inicio del Aside */
 
-/* Galeria */
+aside ul
+{
+    display: flex;
+    flex-direction: column;
+    top: 10vh;
+    position: sticky;
+    margin-top: 1vh;
+}
+aside li{
+    width: 70%;
+}
+
+aside a
+{
+    color: #554b33;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Inicio de Galeria */
 
 .galeria
 {
@@ -254,3 +284,42 @@ footer a.logo
     flex-grow: 1;
     box-shadow: 2px 2px 10px purple;
 }
+
+/* Fin de Galeria */
+
+/* Inicio de Formulario */
+
+fieldset
+{
+    align-items: center;
+    border: 4px solid black;
+    font-family: 'Lucida Sans', sans-serif;
+    margin: 5px;
+}
+
+fieldset ul
+{
+    display: flex;
+    color: black;
+    align-content: left;
+    align-items: left;
+
+}
+
+fieldset li
+{
+    margin: auto;
+    background-color: #d0c3a6;
+}
+
+fieldset div
+{
+    background-color: #92876c;
+    text-align: justify;
+    border: 7px solid;
+    border-image: linear-gradient(to right, #fff1cf 0%, #d6c292 35%, #b59e67 100%)1;
+    margin: 10px 10vh;
+    padding: 10px;
+}
+
+/* Fin de Formulario */
