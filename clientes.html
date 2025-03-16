@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clientes</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/ico" href="imagenes/favicon.ico">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
 </head>
 
 <body>
@@ -14,12 +14,12 @@
     <div class="contenedor-principal">
         <!-- Cabecera de la Pagina / misma para todas -->
         <banner>
-            <img src="imagenes/banner.jpg" alt="logo_Delta">
+            <img src="images/banner.jpg" alt="logo_Delta">
             <h1>Bienvenido a Delta Electronics</h1>
         </banner>
         <header>
             <nav>
-                <a class="logo" href="landing.html"> <img src="imagenes/delta_logo.png" alt="logo_Delta"></a>
+                <a class="logo" href="landing.html"> <img src="images/delta_logo.png" alt="logo_Delta"></a>
                 <ul>
                     <li><a href="catalogo.html">CATALOGO</a></li>
                     <li><a href="proyecto.html">PROYECTO</a></li>
@@ -35,12 +35,13 @@
                         <legend> Datos del Usuario </legend>
                         <div>
                             <label for="campo-nombre">Nombre</label>
-                            <input id="campo-nombre" type="text" name="nombre" placeholder="Escribe tu nombre"required><br>
+                            <input id="campo-nombre" type="text" name="nombre" placeholder="Escribe tu nombre"
+                                required><br>
 
 
                             <label for="campo-apellidos">Apellidos</label>
-                            <input id="campo-apellidos" type="text" name="apellidos"
-                                placeholder="Escribe tus apellidos"required><br>
+                            <input id="campo-apellidos" type="text" name="apellidos" placeholder="Escribe tus apellidos"
+                                required><br>
                         </div>
                         <div>
                             <p>Eres socio?</p>
@@ -109,17 +110,18 @@
                         <div>
                             <!-- Campo de fecha -->
                             <label for="datetime-local">Fecha de incidencia</label>
-                            <input type="datetime-local" name="Fecha">
-                            <br><br>
+                            <input type="datetime-local" name="Fecha"><br>
+                            
                             <!-- Area de texto -->
-                            <textarea name="textarea" rows="5" cols="50">Informacion extra del caso</textarea>
-                            <br>
+                            <br><label for="textarea">Informacion extra del caso</label><br>
+                            <textarea name="textarea" rows="5" cols="30vw"></textarea>
+                            
                         </div>
                     </fieldset>
                     <fieldset id="Envio">
                         <!-- Campo de checkbox -->
                         <input id="checkbox" type="checkbox" name="condiciones" value="1" required>
-                        <label for="checkbox">Acepto las condiciones</label> <br>
+                        <label for="checkbox">Acepto las condiciones</label>
                         <br>
                         <!-- Boton de envio -->
                         <input type="submit" value="Enviar">
@@ -144,7 +146,7 @@
         </main>
         <!-- Pie de pagina / mismo para todos -->
         <footer>
-            <a class="logo" href="landing.html"> <img src="imagenes/delta_logo.png" alt="logo_Delta"></a>
+            <a class="logo" href="landing.html"> <img src="images/delta_logo.png" alt="logo_Delta"></a>
             <ul>
                 <li><a href="https://www.instagram.com/delta.electronics.group/" target="_blank" class="instagram"></a>
                 </li>
@@ -156,8 +158,8 @@
             </ul>
 
             <p>
-                <marquee behavior="scroll" direction="left" scrollamount="10"> 2025 Delta Electronics, Inc. All Rights
-                    Reserved</marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="10"> 2025 Delta Electronics, Inc. Todos los
+                    derechos reservados.</marquee>
             </p>
 
         </footer>
