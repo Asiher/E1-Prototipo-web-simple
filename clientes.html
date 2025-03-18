@@ -12,11 +12,12 @@
 <body>
     <!-- Contenedor de la Pagina Entera -->
     <div class="contenedor-principal">
-        <!-- Cabecera de la Pagina / misma para todas -->
+        <!-- Banner -->
         <div class="banner">
             <img src="images/banner.jpg" alt="banner">
             <h1>Bienvenido a Delta Electronics</h1>
         </div>
+        <!-- Cabecera de la Pagina / misma para todas -->
         <header>
             <nav>
                 <a class="logo" href="landing.html"> <img src="images/delta_logo.png" alt="logo_Delta"></a>
@@ -29,7 +30,9 @@
         </header>
         <!-- Cuerpo principal de la pagina -->
         <main>
+            <!-- Articulo, donde se ubica el formulario-->
             <article class="formulario">
+                <!-- Inicio del formulario -->
                 <form action="" method="post">
                     <fieldset id="Datos">
                         <legend> Datos del Usuario </legend>
@@ -65,7 +68,6 @@
                             <input id="campo-telefono" type="tel" name="Telefono" placeholder="+34 999 888 777"
                                 required><br><br>
                         </div>
-
                     </fieldset>
                     <fieldset id="Motivo">
                         <legend> Motivo de Contacto </legend>
@@ -111,27 +113,24 @@
                             <!-- Campo de fecha -->
                             <label for="datetime-local">Fecha de Incidencia</label>
                             <input type="datetime-local" name="Fecha"><br>
-                            
+
                             <!-- Area de texto -->
                             <br><label for="textarea">Información Extra del Caso</label><br>
                             <textarea name="textarea" rows="5" cols="30vw"></textarea>
-                            
+
                         </div>
                     </fieldset>
                     <fieldset id="Envio">
                         <div>
-                        <!-- Campo de checkbox -->
-                        <input id="checkbox" type="checkbox" name="condiciones" value="1" required>
-                        <label for="checkbox">Acepto las Condiciones</label>
-                        <br>
-                        <!-- Boton de envio -->
-                        <input type="submit" value="Enviar" class="boton">
+                            <!-- Campo de checkbox -->
+                            <input id="checkbox" type="checkbox" name="condiciones" value="1" required>
+                            <label for="checkbox">Acepto las Condiciones</label>
+                            <br>
+                            <!-- Boton de envio -->
+                            <input type="submit" value="Enviar" class="boton">
                         </div>
-
                     </fieldset>
-
                 </form>
-
             </article>
             <!-- Barra de navegacion izquierda -->
             <nav>
@@ -139,34 +138,38 @@
                 <ul>
                     <li>
                         <p class="fecha">12/03/2025</p>
-                        <a href="https://www.deltaww.com/en-us/news/39624"target="_blank">
-                            <p>Delta Honrada Entre Los 100 Principales Innovadores Globales de Clarivate por Cuarto Año Consecutivo.</p>
+                        <a href="https://www.deltaww.com/en-us/news/39624" target="_blank">
+                            <p>Delta Honrada Entre Los 100 Principales Innovadores Globales de Clarivate por Cuarto Año
+                                Consecutivo.</p>
                         </a>
                     </li>
                     <li>
                         <p class="fecha">10/03/2025</p>
-                        <a href="https://www.deltaww.com/en-us/news/39149"target="_blank">
-                            <p>Los Ingresos Consolidados por Ventas de Delta Electronics en Febrero de 2025 Totalizaron 38,090 Millones de Dolares.</p>
+                        <a href="https://www.deltaww.com/en-us/news/39149" target="_blank">
+                            <p>Los Ingresos Consolidados por Ventas de Delta Electronics en Febrero de 2025 Totalizaron
+                                38,090 Millones de Dolares.</p>
                         </a>
                     </li>
                     <li>
                         <p class="fecha">26/02/2025</p>
-                        <a href="https://www.deltaww.com/en-us/news/39602"target="_blank">
-                            <p>La Junta Directiva de Delta Electronics, Inc. Propone una Distribución de Beneficios de 2024 de 7.00$ por Acción.</p>
+                        <a href="https://www.deltaww.com/en-us/news/39602" target="_blank">
+                            <p>La Junta Directiva de Delta Electronics, Inc. Propone una Distribución de Beneficios de
+                                2024 de 7.00$ por Acción.</p>
                         </a>
                     </li>
                     <li>
                         <p class="fecha">23/02/2025</p>
 
                         <a href="https://www.deltaww.com/en-us/news/39595" target="_blank">
-                            <p>Delta Lanza sus Nuevos Robots Colaborativos para el Mercado de Manufactura Inteligente de la India en ELECRAMA 2025.</p>
+                            <p>Delta Lanza sus Nuevos Robots Colaborativos para el Mercado de Manufactura Inteligente de
+                                la India en ELECRAMA 2025.</p>
                         </a>
                     </li>
                 </ul>
             </nav>
             <!-- Barra de navegacion derecha -->
             <aside>
-                <h1>Columna</h1>
+                <h1>Índice</h1>
                 <ul>
                     <li><a href="#Datos">DATOS USUARIO</a></li>
                     <li><a href="#Motivo">MOTIVOS</a></li>
@@ -178,6 +181,8 @@
         <!-- Pie de pagina / mismo para todos -->
         <footer>
             <a class="logo" href="landing.html"> <img src="images/delta_logo.png" alt="logo_Delta"></a>
+            <a href="clientes.html" target="_blank" class="contacto"><img class="contacto"
+                    src="images/icon-mail.svg">CONTÁCTANOS</a>
             <ul>
                 <li><a href="https://www.instagram.com/delta.electronics.group/" target="_blank" class="instagram"></a>
                 </li>
@@ -187,12 +192,9 @@
                 <li><a href="https://www.facebook.com/delta.electronics.group/" target="_blank" class="facebook"></a>
                 </li>
             </ul>
-<!-- Marquesina derecho de copy -->
             <p>
-                <marquee behavior="scroll" direction="left" scrollamount="10"> 2025 Delta Electronics, Inc. Todos los
-                    derechos reservados.</marquee>
+                2025 Delta Electronics, Inc. Todos los derechos reservados.
             </p>
-
         </footer>
     </div>
 </body>

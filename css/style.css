@@ -1,11 +1,11 @@
 /* Inicio Ajustes Generales */
+
 section
 {
     /* nuevo_sirve para dejar distancia cuando clickas un inner link */
     scroll-margin-top: 100px;
     border: 4px solid grey;
     margin: 10px;
-
 }
 
 header
@@ -21,7 +21,6 @@ main
 {
     display: flex;
     height: auto;
-
 }
 
 aside
@@ -32,7 +31,6 @@ aside
     background-color: #ddd;
     border-left: 4px solid gray;
     padding: 5px;
-
 }
 
 article
@@ -52,7 +50,6 @@ nav
     flex-grow: 1;
     flex-basis: 0;
     background-color: #fff;
-
 }
 
 fieldset
@@ -101,7 +98,6 @@ p
 {
     font-family: 'Lucida Sans', sans-serif;
     padding: 5px;
-
 }
 
 h1
@@ -113,8 +109,22 @@ h2
 {
     font-size: 20px;
 }
-p{
+
+p
+{
     text-align: justify;
+}
+
+section p:first-letter
+{
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+input[type="checkbox"]:checked
+{
+    box-shadow: 0px 0px 10px grey;
 }
 
 textarea
@@ -128,6 +138,7 @@ textarea
 /* Fin de Ajustes Generales */
 
 /* Inicio Main */
+
 .contenedor-principal
 {
     display: flex;
@@ -137,7 +148,7 @@ textarea
 
 /* Fin Main */
 
-/* Banner */
+/* Inicio del Banner */
 
 .banner img
 {
@@ -145,7 +156,6 @@ textarea
     height: 40vh;
     margin-bottom: -15vh;
 }
-
 
 .banner h1
 {
@@ -156,7 +166,6 @@ textarea
     margin-right: 10vw;
     max-width: 90vw;
 }
-
 
 /* Fin del Banner */
 
@@ -191,7 +200,6 @@ header a:hover
 
 a:hover.logo
 {
-
     background-color: transparent;
     padding-top: 30px;
 }
@@ -209,7 +217,6 @@ a.logo.activo
     background-color: transparent;
     margin: 2px;
     padding: 30px 30px 0px 30px;
-
 }
 
 .logo img
@@ -246,11 +253,32 @@ footer ul
 {
     border-bottom: 4px solid gray;
     padding: 10px;
-
 }
+
 footer li
 {
     margin-left: 10%;
+}
+
+a.contacto
+{
+    color: grey;
+    align-self: center;
+    padding: 10px;
+    margin-right: 13vw;
+    text-decoration: none;
+}
+
+a.contacto:hover
+{
+    text-decoration: underline;
+}
+
+img.contacto
+{
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
 }
 
 a.instagram
@@ -298,6 +326,7 @@ footer a.logo
 /* Fin del Footer */
 
 /* Inicio Article */
+
 article li h1
 {
     font-size: 15px;
@@ -345,12 +374,12 @@ li h1
 /* Fin del Article */
 
 /* Inicio del Section */
+
 section img
 {
     max-width: 40vw;
     max-height: 20vw;
     margin-left: 25%;
-
 }
 
 /* Fin del Section */
@@ -430,7 +459,7 @@ aside h1
 
 /* Fin de Aside */
 
-/* Inicio de Catalogo */
+/* Inicio de Catálogo */
 
 .galeria
 {
@@ -463,23 +492,27 @@ aside h1
     margin: 10px;
     /* sirve para dejar distancia cuando clickas un inner link */
     scroll-margin-top: 100px;
-
 }
+
 table
 {
-    align-self: center ;
+    align-self: center;
     border: 4px solid grey;
     margin: 10px;
     width: 55vw;
 }
-th{
+
+th
+{
     background-color: #ccc;
 }
-tr:hover{
+
+tr:hover
+{
     background-color: lightskyblue;
 }
 
-/* Fin de Catalogo */
+/* Fin de Catálogo */
 
 /* Inicio Proyecto */
 
@@ -518,7 +551,6 @@ tr:hover{
 {
     text-align: center;
     font-size: 35px;
-
 }
 
 #proyecto h2
@@ -533,7 +565,6 @@ tr:hover{
 
 fieldset
 {
-    /* //align-items: center; */
     border: 4px solid black;
     font-family: 'Lucida Sans', sans-serif;
     margin: 20px 5px 5px 5px;
@@ -556,7 +587,6 @@ fieldset li
 
 fieldset div
 {
-    /* background-color: #92876c; */
     text-align: justify;
     border: 7px solid;
     border-image: linear-gradient(90deg, #ccc 0%, #E4F0D0 35%, #C2D8B9 100%)1;
@@ -576,7 +606,6 @@ fieldset div
 .boton:hover
 {
     background-image: linear-gradient(90deg, #ccc 0%, lightblue 35%, #C2D8B9 100%);
-
 }
 
 
@@ -584,7 +613,8 @@ fieldset div
 
 /* Inicio condiciones de Reactivo */
 
-/* Estilos para móviles */
+/* 1- Estilos para móviles */
+
 @media (620px>width)
 {
     aside,
@@ -595,10 +625,11 @@ fieldset div
 
     ul
     {
-        /* display: inline; */
         flex-direction: column;
     }
-    article ul{
+
+    article ul
+    {
         flex-direction: column;
     }
 
@@ -616,7 +647,9 @@ fieldset div
     {
         padding: 10px 10px 0px 10px;
     }
-    .activo a{
+
+    .activo a
+    {
         padding: 10px 10px 0px 10px;
     }
 
@@ -645,12 +678,15 @@ fieldset div
         display: flex;
         flex-direction: row;
     }
-    table{
+
+    table
+    {
         display: none;
     }
 }
 
-/* Estilos para tablet */
+/* 2- Estilos para tablet */
+
 @media (1000px>width>620px)
 {
     nav
@@ -694,7 +730,8 @@ fieldset div
     }
 }
 
-/* Estilos para desktop */
+/* 3- Estilos para desktop */
+
 @media (1000px<width)
 {
     li
